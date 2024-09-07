@@ -1,4 +1,12 @@
-# This is CI/CD version 0.3.0
+# This is CI/CD version 0.4.0
+#
+# Changelog
+#
+# v0.4.0 - 07.09.2024 (by eXory2024)
+# Add environment variable "ANIO_CICD" for scripts to detect CI.
+# "ANIO_CICD" contains the current CI/CD version.
+#
+
 name: CI/CD
 
 on:
@@ -12,7 +20,8 @@ jobs:
     strategy:
       matrix:
         node-version: [21.x]
-
+    env:
+      ANIO_CICD: "v0.4.0"
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
@@ -34,7 +43,8 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/v')
     permissions:
       id-token: write
-
+    env:
+      ANIO_CICD: "v0.4.0"
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node.js

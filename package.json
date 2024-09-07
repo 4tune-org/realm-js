@@ -1,0 +1,20 @@
+{
+  "name": "@4tune-poc/realm-js",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Anio Software <info@anio.software>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4tune-poc-org/realm-js.git"
+  },
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "scripts": {
+    "postinstall": "node ./install.mjs"
+  },
+  "dependencies": {
+    "@4tune-poc/realm-js-and-web-base": "^0.0.1"
+  }
+}

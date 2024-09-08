@@ -9,8 +9,7 @@
     "url": "git+https://github.com/4tune-poc-org/realm-js.git"
   },
   "exports": {
-    ".": "./src/__index.auto.mjs",
-    "./rollup-plugin": "./src/rollup-plugin.mjs"
+    ".": "./src/__index.auto.mjs"
   },
   "scripts": {
     "postinstall": "node ./install.mjs"

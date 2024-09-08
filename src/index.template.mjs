@@ -20,9 +20,4 @@ const runtime_data = await generateRuntimeData(
 
 const runtime = await initializeRuntimeFromData(runtime_data)
 
-export function getRuntimeVersion(...args) { return runtime.getRuntimeVersion(...args); }
-export function loadResource(...args) { return runtime.loadResource(...args); }
-export function loadProjectPackageJSON(...args) { return runtime.loadProjectPackageJSON(...args); }
-export function loadFortuneConfiguration(...args) { return runtime.loadFortuneConfiguration(...args); }
-export function createDefaultContext(...args) { return runtime.createDefaultContext(...args); }
-export default runtime;
+//$$$runtime_glue_code$$$//

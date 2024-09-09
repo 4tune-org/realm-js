@@ -18,8 +18,14 @@ const {runtime_init_data, project_resources} = ctx
 
 const runtime = await initializeRuntime(runtime_init_data, project_resources)
 
-export function loadResource(url) {
-	return runtime.loadResourceDynamic(url)
+const loadResource_impl = function loadResource(url) {
+	return runtime.loadResourceDynamic(url, false)
 }
+
+loadResource_impl.asURL = function loadResourceAsURL(url) {
+	return runtime.loadResourceDynamic(url, true)
+}
+
+export const loadResource = loadResource_impl
 
 //$$$runtime_glue_code$$$//

@@ -2,13 +2,13 @@ import fs from "node:fs/promises"
 import {fileURLToPath} from "node:url"
 import path from "node:path"
 import {createRequire} from "node:module"
-import createRuntimeGlueCode from "@4tune-poc/realm-js-and-web-base/runtime/createRuntimeGlueCode"
+import createRuntimeGlueCode from "@4tune/realm-js-and-web-base/runtime/createRuntimeGlueCode"
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const require = createRequire(__filename)
 
-const types_path = require.resolve("@4tune-poc/realm-js-and-web-base/runtime/types")
+const types_path = require.resolve("@4tune/realm-js-and-web-base/runtime/types")
 const {default: types} =await import(types_path)
 
 let template = (await fs.readFile(

@@ -5,11 +5,11 @@ import {
 	searchForConfigFile,
 	generateRuntimeInitData,
 	rollupPlugin
-} from "@4tune-poc/realm-js-and-web-base"
+} from "@4tune/realm-js-and-web-base"
 
 import {
 	initializeRuntime
-} from "@4tune-poc/realm-js-and-web-base/runtime"
+} from "@4tune/realm-js-and-web-base/runtime"
 
 const project_root = await searchForConfigFile(path.dirname(process.argv[1]))
 

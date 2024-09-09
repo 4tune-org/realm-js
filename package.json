@@ -1,5 +1,5 @@
 {
-  "name": "@4tune-poc/realm-js",
+  "name": "@4tune/realm-js",
   "version": "0.9.0",
   "description": "",
   "author": "Anio Software <info@anio.software>",
@@ -7,7 +7,7 @@
   "typings": "./src/__index.auto.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/4tune-poc-org/realm-js.git"
+    "url": "git+https://github.com/4tune-org/realm-js.git"
   },
   "exports": {
     ".": "./src/__index.auto.mjs",
@@ -17,6 +17,6 @@
     "postinstall": "node ./install.mjs"
   },
   "dependencies": {
-    "@4tune-poc/realm-js-and-web-base": "0.6.0"
+    "@4tune/realm-js-and-web-base": "0.7.0"
   }
 }

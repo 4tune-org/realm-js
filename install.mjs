@@ -1,4 +1,4 @@
-import runInstall from "@4tune-poc/realm-js-and-web-base/install"
+import runInstall from "@4tune/realm-js-and-web-base/install"
 import createIndexFiles from "./createIndexFiles.mjs"
 
 await createIndexFiles()

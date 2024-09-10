@@ -17,6 +17,6 @@
     "postinstall": "node ./install.mjs"
   },
   "dependencies": {
-    "@4tune/realm-js-and-web-base": "0.7.0"
+    "@4tune/realm-js-and-web-base": "0.8.0"
   }
 }

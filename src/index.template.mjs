@@ -3,7 +3,6 @@ import process from "node:process"
 
 import {
 	searchForConfigFile,
-	generateRuntimeInitData,
 	rollupPlugin
 } from "@4tune/realm-js-and-web-base"
 

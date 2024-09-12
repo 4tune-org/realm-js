@@ -18,7 +18,7 @@ let template = (await fs.readFile(
 const glue_code = createRuntimeGlueCode("runtime")
 
 template = template.split(`//$$$runtime_glue_code$$$//`).join(glue_code)
-template = template.trimRight() + "\n"
+template = template.trimEnd() + "\n"
 
 export default async function() {
 	await fs.writeFile(path.join(__dirname, "src", "__index.auto.mjs"), template)

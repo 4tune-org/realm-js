@@ -11,7 +11,8 @@
   },
   "exports": {
     ".": "./src/__index.auto.mjs",
-    "./rollup-plugin": "./src/rollup-plugin.mjs"
+    "./rollup-plugin": "./src/rollup-plugin.mjs",
+    "./4tune-integration": "./src/4tune-integration/index.mjs"
   },
   "scripts": {
     "postinstall": "node ./install.mjs"

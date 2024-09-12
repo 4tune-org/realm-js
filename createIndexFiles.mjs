@@ -15,7 +15,7 @@ let template = (await fs.readFile(
 	path.join(__dirname, "src", "index.template.mjs")
 )).toString()
 
-const glue_code = createRuntimeGlueCode(false, "runtime")
+const glue_code = createRuntimeGlueCode("runtime")
 
 template = template.split(`//$$$runtime_glue_code$$$//`).join(glue_code)
 template = template.trimRight() + "\n"

@@ -11,6 +11,7 @@
   },
   "exports": {
     ".": "./src/__index.auto.mjs",
+    "./realm-base": "./src/realm-base.mjs",
     "./rollup-plugin": "./src/rollup-plugin.mjs",
     "./4tune-integration": "./src/4tune-integration/index.mjs"
   },
